@@ -1,0 +1,275 @@
+:root{
+  --blanco:#fff;
+  --oscuro:#212121;
+  --primario:#ffc107;
+  --secundario:#0097a7;
+  --gris:#757575;
+  --grisClaro:#dfe9f3;
+
+
+
+}
+.palette{
+  background-color: var(--primario);
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+.android{
+  background-color: var(--primario);
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+
+}
+.card{
+  background-color: var(--primario);
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  
+
+}
+.boton:hover{
+  cursor: pointer;
+  background-color: var(--primario);
+  color:var(--oscuro);
+  transition: opacity 0.3s,
+  color 0.5s, background-color 0.5s;
+  
+}
+.servicio{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.boton:active{
+  opacity: 0.8;
+  color: var(--gris);
+  transition: color 0.5s;
+}
+
+.servicios{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  column-gap: 2rem;
+}
+.servicios p{
+  text-align: center;
+}
+.contacto{
+  background-color: var(--gris);
+}
+html{
+  font-size: 65%;
+}
+body{
+  font-size: 16px;
+  font-family: 'Krub', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(to top,var(--gris) 0%,var(--blanco)100%);
+
+}
+.boton:hover{
+  cursor: pointer;
+  background-color: var(--primario);
+}
+
+.boton{
+  background-color: var(--secundario);
+  padding: 1.5rem 3rem;
+  margin-top: 2rem;
+  color:var(--blanco);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2rem;
+  width:100%;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3rem;
+}
+@media (min-width: 780px) {
+  .boton{
+      width: auto;
+  }
+  .servicios{
+  display: flex;
+  font-size: large;
+  flex-direction: row;
+  grid-template-columns: 1fr,1fr;
+}
+
+}
+@media (min-width:780px){
+  .web{
+    width: 7rem;
+
+  }
+
+}
+
+
+
+.navegacion-principal{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color:var(--secundario);
+  text-transform: uppercase;
+  
+  
+}
+@media(min-width:780px){
+  .navegacion-principal{
+      flex-direction: row;
+      justify-content: space-around;
+  }
+}
+h3{
+  text-align: center;
+  color: var(--secundario);
+}
+.boxshadow{
+  text-align: center;
+  box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.65);
+  background-color: var(--blanco);
+  padding: 2rem;
+  size: 16px;
+  margin-top: 5rem;
+  margin-left:10rem ;
+  margin-right: 10rem;
+  margin-bottom: 5rem;
+  border-radius: 1rem;
+}
+.titulo{
+  text-align: center;
+  font-size: 4rem;
+}
+.titulo span{
+  color: var(--primario);
+  font-size: 2.5rem;
+}
+.nav-bg{
+  background-color: var(--secundario);
+}
+.contenedor{
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.navegacion-principal a{
+  color: var(--blanco);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem;
+}
+.navegacion-principal a:hover{
+  background-color: var(--primario);
+  color: var(--oscuro);
+}
+.back{
+  background-image:url("../imagen/freelancer.jpg");
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contenido-back{
+  background-color: rgba(0, 0,0, .5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contenido-back h2{
+  font-weight: 700;
+  font-size: 3rem ;
+}
+.contenido-back h2,
+.contenido-back p,
+.contenido-back h3{
+  color: var(--blanco);
+}
+.location{
+  display: flex;
+  flex-direction:row ;
+  align-items: center;
+  justify-content: center;
+}
+/* formulario */
+.formulario{
+  background-color: var(--gris);
+  margin: 0 auto;
+  width: min(60rem,100%);
+  border-radius: 10px;
+  padding-top: 2rem;
+}
+.formulario fieldset{
+  border: none;
+}
+fieldset{
+  text-align:left ;
+}
+.campo label{
+  display: block;
+  color: var(--blanco);
+  font-weight: bold;
+  margin-bottom:.5rem;
+  padding-top: 1rem;
+  
+}
+.input-text{
+  width: 10px;
+  border: 0;
+  border-radius: 0.5rem;
+}
+.formulario legend{
+  color: var(--primario);
+  margin:1rem ;
+}
+.campo input{
+  width: 100%;
+  padding: 2rem 0rem;
+  border-radius: 0.5rem;
+  border: none;
+
+}
+.campo{
+  width: 100%;
+}
+textarea{
+  padding: 0;
+}
+.campo textarea{
+  height: 20rem;
+  width: 100%;
+  border: none;
+}
+@media(min-width:769px){
+  .grid{
+    width: 99%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    gap: 1rem;
+  }
+  .campo:nth-child(3),
+  .campo:nth-child(4){
+    grid-column: 1/3;
+  }
+}
